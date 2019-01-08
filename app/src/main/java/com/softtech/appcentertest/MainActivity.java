@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.analytics.Analytics;
 import com.microsoft.appcenter.crashes.Crashes;
+import com.microsoft.appcenter.push.Push;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         AppCenter.start(getApplication(), "57b13362-77c6-43a6-a24a-95f3f1478550",
-                Analytics.class, Crashes.class);
+                Analytics.class, Crashes.class,Push.class);
     }
 //Test for CI
     public void CheckName(View v)  {
