@@ -3,6 +3,7 @@ package com.softtech.appcentertest;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,6 +23,17 @@ public class MainActivity extends AppCompatActivity {
 
         AppCenter.start(getApplication(), "57b13362-77c6-43a6-a24a-95f3f1478550",
                 Analytics.class, Crashes.class,Push.class);
+
+        Button btnCheckName=(Button)findViewById(R.id.button_control_name);
+
+        btnCheckName.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+
+                Toast.makeText(getApplicationContext(),"Uzun Basma,Basmaa!", Toast.LENGTH_SHORT).show();
+                return true;
+            }
+        });
     }
 //Test for CI
     public void CheckName(View v)  {
