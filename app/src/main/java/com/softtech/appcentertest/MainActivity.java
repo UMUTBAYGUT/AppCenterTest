@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
+//Test for CI
     public void CheckName(View v)  {
         String name = ((EditText)findViewById(R.id.editText_name)).getText().toString();
         TextView welcomeText=(TextView)findViewById(R.id.text_welcome);
