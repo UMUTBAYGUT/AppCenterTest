@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "3623637582",
+    "firebase_url": "https://appcentertest-907b8.firebaseio.com",
+    "project_id": "appcentertest-907b8",
+    "storage_bucket": "appcentertest-907b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3623637582:android:177d1acf32bcc2d4",
+        "android_client_info": {
+          "package_name": "com.softtech.appcentertest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3623637582-8e6b9c6p2lvbphrrpjjhqcrpvkbt2d1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCFh4V_6VlTXbBS6icK7JaGgLo_lXPoS4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
