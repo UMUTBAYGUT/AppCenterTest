@@ -2,6 +2,12 @@ package com.softtech.appcentertest;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.io.FileNotFoundException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,4 +16,40 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    public void CheckName(View v)  {
+        String name = ((EditText)findViewById(R.id.editText_name)).getText().toString();
+        TextView welcomeText=(TextView)findViewById(R.id.text_welcome);
+        if(name.equals("umut"))
+        {
+           Toast.makeText(this, "Giriş Başarılı",  Toast.LENGTH_SHORT).show();
+           welcomeText.setText("Hoş Geldin Umut");
+            welcomeText.setTextSize(35);
+        }
+        else if(name.equals("bora"))
+        {
+            Toast.makeText(this, "Yetkilendirmeden dolayı sayfayı göremezsiniz.",  Toast.LENGTH_SHORT).show();
+            welcomeText.setText("");
+        }
+        else if(name.equals("emel"))
+        {
+            Toast.makeText(this, "Build Hata Verdi",  Toast.LENGTH_SHORT).show();
+            welcomeText.setText("Benim Bilgisayarımda Çalışıyordu");
+            welcomeText.setTextSize(17);
+        }
+        else
+        {
+            Integer test = 5 / 0;
+        }
+
+
+
+
+    }
+
+
+
+
+
+
 }
