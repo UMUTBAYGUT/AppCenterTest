@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-//Test for CI
+//Test for CI 2
     public void CheckName(View v)  {
         String name = ((EditText)findViewById(R.id.editText_name)).getText().toString();
         TextView welcomeText=(TextView)findViewById(R.id.text_welcome);
